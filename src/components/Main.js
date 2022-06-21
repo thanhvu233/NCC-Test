@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './Main.module.scss';
 import Logo from './Logo';
 import Description from './Description';
@@ -7,6 +7,7 @@ import Footer from './Footer';
 import Container from './Container';
 
 function Main() {
+
     return (
         <div className={styles.main}>
             <Container>

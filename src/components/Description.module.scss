@@ -25,3 +25,20 @@
         line-height: 1.2;
     }
 }
+
+// Tablet
+@media screen and (max-width: 1366px) {
+    .description {
+        padding-left: 24px;
+        padding-right: 24px;
+
+    }
+}
+
+// Mobile
+@media screen and (max-width: 480px) {
+    .description .detail {
+       text-align: justify;
+
+    }
+}

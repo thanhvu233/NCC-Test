@@ -20,5 +20,41 @@
         margin-right: 8px;
         clear: both;
     }
-    
+
+    & p {
+        text-align: justify;
+    }
+}
+
+// Tablet
+@media screen and (max-width: 1366px) {
+    .featureList {
+        flex-direction: column;
+    }
+}
+
+// Small Tablet
+@media screen and (max-width: 768px) {
+    .featureList {
+        margin-top: 40px;
+
+        gap: 32px;
+
+        & .title {
+            margin-bottom: 14px;
+        }
+    }
+}
+
+// Mobile
+@media screen and (max-width: 480px) {
+    .featureList {
+        margin-top: 40px;
+
+        gap: 36px;
+
+        & .title {
+            margin-bottom: 14px;
+        }
+    }
 }

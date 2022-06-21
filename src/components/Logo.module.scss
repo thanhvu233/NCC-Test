@@ -1,6 +1,61 @@
 .logo {
+    display: flex;
+
     & img {
         margin: 20px auto 0;
         width: 310px;
+    }
+
+    & .menuToggle {
+        width: 48px;
+        height: 48px;
+        background-color: #2e3047;
+        border-radius: 48px;
+
+        display: none;
+
+        & .icon {
+            transform: translate(10px, 10px);
+        }
+
+        & .icon:before {
+            font-size: 28px;
+            color: #fff;
+            transform: translateY(25px);
+        }
+    }
+}
+
+// Small Tablet
+@media screen and (max-width: 767px) {
+    .logo {
+        justify-content: space-between;
+
+        & img {
+            margin: 6px 0 0 0;
+            width: 100px;
+            object-fit: contain;
+        }
+
+        & .menuToggle {
+            display: block;
+        }
+    }
+}
+
+// Mobile
+@media screen and (max-width: 480px) {
+    .logo {
+        justify-content: space-between;
+
+        & img {
+            margin: 6px 0 0 0;
+            width: 100px;
+            object-fit: contain;
+        }
+
+        & .menuToggle {
+            display: block;
+        }
     }
 }

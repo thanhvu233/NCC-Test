@@ -1,10 +1,15 @@
-import React from 'react';
+import { useContext } from 'react';
+import { ToggleContext } from '../App';
 import styles from './Sidebar.module.scss';
 import './Sidebar.scss';
 
 function Sidebar() {
+    // true: sidebar hiện
+    // false: sidebar ẩn
+    const toggle = useContext(ToggleContext);
+
     return (
-        <div className={styles.sidebar}>
+        <div className={toggle ? `${styles.sidebar} show` : `${styles.sidebar} hide`}>
             <ul className={styles.options}>
                 <li className={`${styles.optionItem}`}>
                     <a href='' className='active'>
