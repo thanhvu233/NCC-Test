@@ -1,0 +1,24 @@
+.featureList {
+    display: flex;
+    gap: 50px;
+
+    margin-top: 40px;
+    margin-bottom: 183px;
+}
+
+.item {
+    & .title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.16;
+
+        margin-bottom: 18px;
+    }
+
+    & img {
+        float: left;
+        margin-right: 8px;
+        clear: both;
+    }
+    
+}

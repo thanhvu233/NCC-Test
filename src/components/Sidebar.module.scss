@@ -1,8 +1,10 @@
 .sidebar {
     min-width: 150px;
-    height: 100vh;
 
     background-color: #191718;
+
+    position: fixed;
+    height: 100%;
 }
 
 .options {
