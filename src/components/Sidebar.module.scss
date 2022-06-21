@@ -1,0 +1,39 @@
+.sidebar {
+    min-width: 150px;
+    height: 100vh;
+
+    background-color: #191718;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    & .optionItem {
+        display: inline-block;
+
+        height: 44px;
+        padding-left: 16px;
+        padding-top: 14px;
+
+        border-bottom: 1px solid #5c5c5c;
+
+        & a {
+            color: #aaaaaa;
+            font-weight: 700;
+            line-height: 1.125;
+            display: inline-block;
+            width: 100%;
+        }
+    }
+
+    & .optionItem:hover {
+        background-color: #5c5c5c;
+        cursor: pointer;
+
+        & a {
+            color: #ffffff;
+        }
+    }
+}
