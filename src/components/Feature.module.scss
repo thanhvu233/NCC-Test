@@ -20,16 +20,16 @@
         margin-right: 8px;
         clear: both;
     }
-
-    & p {
-        text-align: justify;
-    }
 }
 
 // Tablet
 @media screen and (max-width: 1366px) {
     .featureList {
         flex-direction: column;
+
+        & p {
+            text-align: justify;
+        }
     }
 }
 
@@ -43,6 +43,10 @@
         & .title {
             margin-bottom: 14px;
         }
+
+        & p {
+            text-align: justify;
+        }
     }
 }
 
@@ -55,6 +59,10 @@
 
         & .title {
             margin-bottom: 14px;
+        }
+
+        & p {
+            text-align: justify;
         }
     }
 }
